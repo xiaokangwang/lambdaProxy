@@ -169,7 +169,7 @@ func rtt(w http.ResponseWriter, r *http.Request,istls bool) {
 		SharedConfigState: session.SharedConfigEnable,
 	}))
 
-	client := lambda.New(sess, &aws.Config{Region: aws.String("us-west-1")})
+	client := lambda.New(sess, &aws.Config{Region: aws.String("ap-northeast-1")})
 
 	// Get the 10 most recent items
 	request := ProxyRequest{url, method, bf.String(),
